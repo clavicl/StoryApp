@@ -1,64 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#FFF0D3">
 
     <FrameLayout
         android:id="@+id/requestListFrame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" >
-        <ListView
-            android:id="@+id/request_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        android:layout_weight="1"
+            >
+
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/viewStoryFrame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" >
-        <TextView
-            android:id="@+id/request_storyText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        android:layout_weight="1"
+            >
+
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/addToStoryFrame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" >
-        <EditText
-            android:id="@+id/request_editStory"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Add to the story here!"
-            android:gravity="top"/>
+        android:layout_weight="1"
+            >
+
     </FrameLayout>
-    <TableRow
-        android:id="@+id/tableRow3"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".5" >
-
-        <Button
-            android:id="@+id/cancelUpdateButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/cancelButton" />
-
-        <Button
-            android:id="@+id/updateButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Update" />
-
-    </TableRow>
 
 </LinearLayout>

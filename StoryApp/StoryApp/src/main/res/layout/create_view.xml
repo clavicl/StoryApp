@@ -3,11 +3,12 @@
     android:id="@+id/TableLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#FFF0D3">
 
     <TableRow
         android:id="@+id/tableRow1"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
@@ -17,11 +18,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:hint="@string/storyTitle"
-            android:ems="10" />
+            android:ems="10"
+            android:typeface="monospace"/>
     </TableRow>
     <TableRow
         android:id="@+id/tableRow3"
-        android:layout_width="0dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="9" >
         <EditText
@@ -32,12 +34,13 @@
             android:hint="@string/storyText"
             android:gravity="top"
             android:ems="10"
-            />
+            android:typeface="monospace"
+                />
     </TableRow>
 
     <TableRow
         android:id="@+id/tableRow3"
-        android:layout_width="0dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" >
 
@@ -46,14 +49,17 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/cancelButton" />
+            android:text="@string/cancelButton"
+            android:typeface="monospace"
+            android:visibility="visible"/>
 
         <Button
             android:id="@+id/createButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/createStory" />
+            android:text="@string/createStory"
+            android:typeface="monospace"/>
 
     </TableRow>
 

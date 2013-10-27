@@ -2,12 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity"
+    android:background="#FFF0D3">
 
     <TextView
         android:id="@+id/storyText"
@@ -17,7 +13,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
         android:text="@string/app_name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:typeface="monospace"
+        android:phoneNumber="false"/>
 
     <Button
         android:id="@+id/checkCreatedButton"
@@ -26,7 +24,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/checkCreated"
-        android:onClick="checkCreated" />
+        android:onClick="checkCreated"
+        android:typeface="monospace"/>
 
     <Button
         android:id="@+id/newStoryButton"
@@ -34,8 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/checkCreatedButton"
         android:layout_centerHorizontal="true"
-        android:text="@string/newStory"
-        android:onClick="createStory" />
+        android:text="@string/newStory" 
+        android:onClick="createStory"
+        android:typeface="monospace"/>
 
     <Button
         android:id="@+id/checkContributedButton"
@@ -43,16 +43,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/checkCreatedButton"
         android:layout_centerHorizontal="true"
-        android:text="@string/checkParticipated"
-        android:onClick="checkContributed"/>
+        android:text="@string/checkParticipated" 
+        android:onClick="checkContributed"
+        android:typeface="monospace"/>
 
     <Button
         android:id="@+id/viewRequestButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/checkCreatedButton"
-        android:layout_below="@+id/checkContributedButton"
         android:onClick="checkRequest"
-        android:text="@string/checkRequests" />
+        android:text="@string/checkRequests"
+        android:layout_below="@+id/checkContributedButton"
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace"/>
 
 </RelativeLayout>
