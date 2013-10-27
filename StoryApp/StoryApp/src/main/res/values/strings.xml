@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">StoryApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="newStory">Create a New Story</string>
+    <string name="checkCreated">Check Created Stories</string>
+    <string name="createStory">Create Story</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="checkRequests">View Story Requests</string>
+    <string name="checkParticipated">Check Contributed To Stories</string>
+    <string name="createStoryTitle">Create a New Story</string>
+    <string name="checkCreatedTitle">View Created Stories</string>
+    <string name="checkContributedTitle">View Contributed Stories</string>
+    <string name="checkRequestTitle">View Current Story Requests</string>
+    <string name="storyTitle">Story Title</string>
+    <string name="storyText">Story goes here.</string>
+
+</resources>
