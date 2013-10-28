@@ -238,7 +238,7 @@ public class CheckCreatedActivity extends Activity {
                 // check to see if each individual textview is null.
                 // if not, assign some text!
                 if (from_textView != null){
-                    from_textView.setText("From: "+Pnumber);
+                    from_textView.setText("Created by: "+Pnumber);
                 }
                 if (title_textView != null){
                     title_textView.setText("Title: " +i.getStory_title());

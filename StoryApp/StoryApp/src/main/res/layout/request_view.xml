@@ -3,16 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFF0D3">
+    android:background="#FFF0D3"
+    android:baselineAligned="false">
 
     <FrameLayout
         android:id="@+id/requestListFrame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-            >
-
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/request_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </FrameLayout>
+
 
     <FrameLayout
         android:id="@+id/viewStoryFrame"
@@ -20,6 +24,14 @@
         android:layout_height="0dp"
         android:layout_weight="1"
             >
+        <TextView
+           android:id="@+id/request_storyText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:typeface="monospace"
+            android:background="#FFF0D3"
+            />
 
     </FrameLayout>
 
@@ -29,7 +41,37 @@
         android:layout_height="0dp"
         android:layout_weight="1"
             >
+        <EditText
+        android:id="@+id/request_editStory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:hint="Add to the story here!"
+        android:gravity="top"/>
 
     </FrameLayout>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5" >
 
-</LinearLayout>
+        <Button
+            android:id="@+id/cancelUpdateButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancelButton" />
+        android:layout_weight="1"
+            >
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Update" />
+
+    </TableRow>
+
+    </LinearLayout>

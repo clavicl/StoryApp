@@ -43,6 +43,7 @@ public class CheckRequestActivity extends Activity
     private ArrayList<Item> createdList = new ArrayList<Item>();
     private ItemAdapter myAdapter;
     private String Pnumber;
+    private String Pfromnumber;
     private int itemClicked = -1;
 
     @Override
@@ -142,7 +143,6 @@ public class CheckRequestActivity extends Activity
         }
     }
 
-
     private String getMyPhoneNumber(){
         TelephonyManager mTelephonyMgr;
         mTelephonyMgr = (TelephonyManager)
@@ -205,8 +205,10 @@ public class CheckRequestActivity extends Activity
                         }
                     }
                 }
-                else if(flag != null && flag.equals("1"))
+                else if(flag != null && flag.equals("1")){
                     flag="2";
+                    Pfromnumber = jsonObject.getString("from");
+                }
             }catch (Exception e)
             {
                 e.printStackTrace();
@@ -326,7 +328,7 @@ public class CheckRequestActivity extends Activity
                 TextView story_textView = (TextView) v.findViewById(R.id.story);
 
                 if (from_textView != null){
-                    from_textView.setText("From: "+Pnumber);
+                    from_textView.setText("Created by: "+i.getCreator());
                 }
                 if (title_textView != null){
                     title_textView.setText("Title: " +i.getStory_title());

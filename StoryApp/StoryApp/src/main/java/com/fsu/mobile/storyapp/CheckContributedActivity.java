@@ -225,7 +225,7 @@ public class CheckContributedActivity extends Activity {
                 TextView story_textView = (TextView) v.findViewById(R.id.story);
 
                 if (from_textView != null){
-                    from_textView.setText("From: "+Pnumber);
+                    from_textView.setText("Created by: "+i.getCreator());
                 }
                 if (title_textView != null){
                     title_textView.setText("Title: " +i.getStory_title());

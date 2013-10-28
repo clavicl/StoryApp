@@ -12,6 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" >
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </FrameLayout>
 
     <FrameLayout
@@ -19,6 +23,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" >
+        <TextView
+            android:id="@+id/storyText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:typeface="monospace"
+            android:background="#FFF0D3"/>
 
     </FrameLayout>
 
